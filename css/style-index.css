@@ -1,4 +1,100 @@
 *
 {
-    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+    background-color: black;
 }
+
+
+
+/* ---- INICIO CONTENEDOR MASTER ---- */
+.contenedor-master
+{
+    width: 98.5%;
+    /* Ancho maximo del contenedor */
+    /* max-width: 1000px;  */
+    margin: 10px;
+    
+    /* activamos maquetacion grid */
+    display: grid; 
+    grid-gap: 10px;
+    /* indico en cuantas fracciones de grid se divide la maqueta
+    columnas y filas  */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+    /* indicamos con areas, en que lugar irá cada seccion (este
+    comando se activara con "grid-area", buscar CMD+F ) */
+    grid-template-areas:
+    "header-1-0 header-1-0 header-1-0"
+    "contenido-1-0 contenido-1-0 aside-1-0 "
+    "footer-1-0 footer-1-0 footer-1-0";
+    
+}
+/* ---- FIN CONTENEDOR MASTER ---- */
+
+
+
+
+
+/* ---- INICIO SECCION HEADER ---- */
+.header-1-0
+{
+    background-color: rgba(255, 255, 255, 0.2) ;
+    color: #aeb6b0;
+    /* activa areas */
+    grid-area: header-1-0;
+    
+    padding: 2em;
+
+}
+/* ---- FIN SECCION HEADER ---- */
+
+
+
+
+
+/* ---- INICIO SECCION CONTENIDO ---- */
+.contenido-1-0
+{
+    grid-area: contenido-1-0;
+
+    background-color: rgb(125, 148, 93);
+    color: aliceblue;
+
+    padding: 1em;
+
+}
+/* ---- FIN SECCION CONTENIDO ---- */
+
+
+
+
+
+/* ---- INICIO SECCION ASIDE ---- */
+.aside-1-0
+{
+    grid-area: aside-1-0;
+
+    background-color: rgb(207, 217, 98);
+    color: aliceblue;
+
+    padding: 1em;
+
+}
+/* ---- FIN SECCION ASIDE ---- */
+
+
+
+/* ---- INICIO SECCION FOOTER ---- */
+.footer-1-0
+{
+    grid-area: footer-1-0 ;
+
+    background-color: rgba(255, 255, 255, 0.2) ;
+    color: #aeb6b0;
+
+    padding: 1em;
+
+}
+/* ---- FIN SECCION FOOTER ---- */
