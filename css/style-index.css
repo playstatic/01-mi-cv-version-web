@@ -46,7 +46,30 @@
     grid-area: header-1-0;
     
     padding: 2em;
+}
 
+
+.fotoDePerfil 
+{
+    display: inline-block;
+    position: relative;
+
+    /* width: 30%;
+    height: 30%; */
+    width: 300px;
+    height: 300px;
+
+    /* le decimos a la seccion donde va la foto de perfil, que se 
+    oculte si llega a desbordar el ancho y alto, luego le indica-
+    mos que se haga redonda la parte visible de la seccion */
+    overflow: hidden;
+    border-radius: 50%;
+}
+.fotoDePerfil img
+{
+   width: auto;
+   height: 100%;
+   margin-left: -10px;
 }
 /* ---- FIN SECCION HEADER ---- */
 
