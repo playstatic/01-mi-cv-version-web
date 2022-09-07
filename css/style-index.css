@@ -55,7 +55,7 @@
     grid-template-rows: repeat(3, auto);
 
     grid-template-areas:
-    "fotoDePerfil nombre-titular nombre-titular";   
+    "fotoDePerfil sobre-Mi sobre-Mi";   
 }
 
     /* -- inicio subsecciones de header-1-0 -- */
@@ -84,7 +84,20 @@
    margin-left: -10px;
 }
 
-.nombre-titular
+.sobre-Mi  /*seccion sobre auto presentacion*/
+{
+    /* background-color: aqua; */
+    grid-area: sobre-Mi;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(20, auto);
+
+    grid-template-areas: "nombre-titular nombre-titular nombre-titular"
+                         "sobre-Mi-1-1 sobre-Mi-1-1 sobre-Mi-1-1"  
+    ;
+}
+.nombre-titular /*este está dentro de clase .sobre-Mi */
 {
     /* background-color: aqua; */ /*borrar color de prueba */
     background: transparent;
@@ -93,10 +106,15 @@
 
     grid-area: nombre-titular;
 
-    height: 10%;
+    height: auto;
     width: 100%;
 
+    /* background-color: blueviolet; */
 }
+    .sobre-Mi-1-1
+    {
+        grid-area: sobre-Mi-1-1;
+    }
     /* -- fin subsecciones de header-1-0 -- */
 /* ---- FIN SECCION HEADER ---- */
 
