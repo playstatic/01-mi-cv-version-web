@@ -96,6 +96,8 @@
     grid-template-areas: "nombre-titular nombre-titular nombre-titular"
                          "sobre-Mi-1-1 sobre-Mi-1-1 sobre-Mi-1-1"  
     ;
+    background: transparent;
+
 }
 .nombre-titular /*este está dentro de clase .sobre-Mi */
 {
@@ -114,6 +116,7 @@
     .sobre-Mi-1-1
     {
         grid-area: sobre-Mi-1-1;
+        
     }
     /* -- fin subsecciones de header-1-0 -- */
 /* ---- FIN SECCION HEADER ---- */
